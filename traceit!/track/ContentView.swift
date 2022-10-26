@@ -7,15 +7,15 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @State var count: Int = 0
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+             Text ("Current account: \(count) ")
+            
         }
-        .padding()
     }
 }
 
